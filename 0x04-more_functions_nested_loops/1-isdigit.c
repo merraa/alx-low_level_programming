@@ -2,7 +2,7 @@
 
 /**
  * _isdigit - A fuction that checks for a digit (0 through 9).
- * @c: value to be checked
+ * @c: An input integer
  * Return: 1 if c is a digit 0 if it's not.
  */
 
