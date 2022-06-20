@@ -1,31 +1,27 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * _strspn - Gets the length of a prefix substring
- * @s: String that is tested
- * @accept: bytes checked
- * Return: Number of bytes
+ * _strpbrk - Searches a string for any set of bytes
+ * @s: String tested
+ * @accept: input searched for
+ * Return: Always 0.
  */
 
-unsigned int _strspn(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
-	int i = 0, j, a = 1;
-	unsigned int count = 0;
+	int i, j;
+	char *a;
 
-	while (s[i] != '\0' && a == 1)
+	for (i = 0; s[i]; i++)
 	{
-		a = 0;
-		for (j = 0; accept[j] != '\0'; j++)
+		for (j = 0; accept[j]; j++)
 		{
 			if (s[i] == accept[j])
 			{
-				count++;
-				a = 1;
-				break;
+				a = (s + i);
+				return (a);
 			}
 		}
-		i++;
 	}
-	return (count);
+	return ('\0');
 }
