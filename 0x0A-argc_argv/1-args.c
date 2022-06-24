@@ -1,10 +1,11 @@
 #include <stdio.h>
 
 /**
- * main - program starts here
- *@argc - number of arguments passed
- *@argv - string of arguments passed
- * Return: Always (0)
+ * main - Prints the number of arguments passed
+ * into it
+ *@argc: count of arguments
+ *@argv: array of pointers to the strings passed
+ * Return: Always 0.
  */
 
 int main(int argc, char *argv[]__attribute__((unused)))
