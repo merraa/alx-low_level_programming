@@ -32,10 +32,11 @@ int **alloc_grid(int width, int height)
 		free(twoD);
 		return (NULL);
 		}
-		for (x = 0; x < height; x++)
-		{
-			for (y = 0; y < width; y++)
-				twoD[x][y] = 0;
-		}
-		return (twoD);
+	}
+	for (x = 0; x < height; x++)
+	{
+		for (y = 0; y < width; y++)
+		twoD[x][y] = 0;
+	}
+	return (twoD);
 }
