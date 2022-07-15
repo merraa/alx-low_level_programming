@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
- * print_list - Prints all the elements 
+ * print_list - Prints all the elements
  * f a list_t list
  * @h: Pointer to elements of the list
  * Return: 0 if str is null
